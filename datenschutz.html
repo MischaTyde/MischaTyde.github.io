@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI-OS – Datenschutz</title>
+<style>
+  :root { --bg: #fafaf9; --fg: #1c1917; --muted: #57534e; --line: #e7e5e4; --accent: #b45309; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #1c1917; --fg: #f5f5f4; --muted: #a8a29e; --line: #44403c; --accent: #f59e0b; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 16px 40px; }
+  h1 { font-size: 26px; margin: 0 0 4px; }
+  h2 { font-size: 18px; margin: 28px 0 8px; }
+  p, ul { margin: 0 0 14px; }
+  ul { padding-left: 20px; }
+  .meta { color: var(--muted); font-size: 14px; margin-bottom: 24px; }
+  a { color: var(--accent); }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Datenschutzerklärung AI-OS</h1>
+  <p class="meta">Stand: 24.11.2026 · <a href="./">zur Startseite</a></p>
+
+  <h2>Worum es geht</h2>
+  <p>AI-OS ist ein privates Organisationswerkzeug. Es wird ausschließlich vom Betreiber (Michael T.) mit seinem eigenen Google-Konto genutzt. Andere Personen melden sich nicht an, und es werden keine Daten Dritter verarbeitet.</p>
+
+  <h2>Welche Google-Daten genutzt werden</h2>
+  <p>AI-OS nutzt die Google Tasks API mit der Berechtigung <code>https://www.googleapis.com/auth/tasks</code>, um:</p>
+  <ul>
+    <li>die Aufgabenlisten und offenen Aufgaben (Titel, Fälligkeitsdatum, Link) des eigenen Kontos zu lesen,</li>
+    <li>Aufgaben als erledigt zu markieren und neue Aufgaben anzulegen, wenn der Betreiber das im Cockpit selbst auslöst.</li>
+  </ul>
+  <p>Andere Google-Daten (E-Mails, Kontakte, Dateien, Kalender) werden nicht abgerufen.</p>
+
+  <h2>Wo die Daten liegen</h2>
+  <ul>
+    <li>Das Anmelde-Token wird nur lokal auf dem Rechner des Betreibers gespeichert.</li>
+    <li>Die offenen Aufgaben werden in einem privaten, nicht öffentlichen Cockpit des Betreibers auf claude.ai (Anthropic) angezeigt und dort von seinem KI-Assistenten verarbeitet, um sie abzugleichen.</li>
+    <li>Die Daten werden nicht verkauft, nicht für Werbung genutzt und an niemanden sonst weitergegeben.</li>
+  </ul>
+
+  <h2>Google API Services User Data Policy</h2>
+  <p>Die Nutzung und Übertragung von Informationen, die AI-OS über Google-APIs erhält, hält sich an die <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, einschließlich der Anforderungen zur eingeschränkten Nutzung (Limited Use).</p>
+
+  <h2>Zugriff widerrufen und löschen</h2>
+  <p>Der Zugriff lässt sich jederzeit unter <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> entfernen. Danach kann AI-OS keine Aufgaben mehr lesen oder ändern. Lokal gespeicherte Exporte können jederzeit gelöscht werden.</p>
+
+  <h2>Kontakt</h2>
+  <p>Fragen zu dieser Erklärung über <a href="https://github.com/MischaTyde">github.com/MischaTyde</a>.</p>
+
+  <footer>AI-OS · Michael T.</footer>
+</main>
+</body>
+</html>
